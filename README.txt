@@ -1,28 +1,14 @@
-# Calendrier SPV 63 — version 1
+CALENDRIER SPV 63 - VERSION 2
 
-Application web personnelle pour suivre une tournée de calendriers.
+Fichiers : index.html, manifest.json, sw.js.
 
-## Fonctionnalités
-- Maisons/adresses et statuts : à faire, visité, absent, à repasser
-- Dons en espèces ou chèques
-- Tableau de bord et statistiques
-- Carte Leaflet/OpenStreetMap avec coordonnées GPS
-- Géolocalisation et lien d'itinéraire Apple Plans
-- Export/import JSON pour transférer les données entre appareils
-- Interface responsive iPhone/Mac et base PWA
+Fonctionnalités :
+- Ajouter les maisons manuellement ou en cliquant directement sur la carte.
+- Enregistrer le nom du foyer/de la personne, l'adresse, le statut, la date de visite et les coordonnées GPS.
+- Gérer les dons séparément des maisons. Un ou plusieurs dons peuvent être rattachés à une maison, avec montant, espèces/chèque, date et note facultative.
+- Modifier ou supprimer maisons et dons.
+- Tableau de bord, carte, recherche, itinéraire, sauvegarde et import/export JSON.
 
-## Important
-Les données sont stockées localement dans le navigateur (localStorage). Elles ne sont pas synchronisées automatiquement entre iPhone et Mac. Exporter régulièrement une sauvegarde JSON et l'importer sur l'autre appareil.
-La carte et les bibliothèques externes nécessitent une connexion Internet. La carte ne fonctionne pas hors ligne. N'inscrivez pas de données personnelles sensibles concernant les habitants.
+Données : stockées localement dans le navigateur de l'appareil. Les données ne sont pas synchronisées automatiquement entre appareils. Exporter/importer le JSON pour transférer les données.
 
-## Publication gratuite avec GitHub Pages
-1. Créer un compte GitHub.
-2. Créer un nouveau dépôt (repository) nommé `calendrier-spv-63`.
-3. Pour un dépôt public, les fichiers du code seront visibles publiquement, mais les données enregistrées dans le navigateur ne sont pas publiées.
-4. Téléverser `index.html`, `manifest.json` et `sw.js` à la racine du dépôt.
-5. Dans Settings > Pages, choisir Deploy from a branch, `main`, `/ (root)`, puis Save.
-6. Attendre la publication. L'adresse sera de la forme `https://VOTRE-PSEUDO.github.io/calendrier-spv-63/`.
-7. Ouvrir cette adresse dans Safari sur iPhone, toucher Partager, puis « Sur l'écran d'accueil ».
-
-## Sauvegarder/transférer
-Dans l'application > Sauvegarde > Exporter mes données. Sur l'autre appareil, ouvrir l'application > Sauvegarde > Importer JSON.
+Mise à jour : remplacer les fichiers du dépôt GitHub Pages par ceux de cette version. Garder le même nom de dépôt et le même index.html.
